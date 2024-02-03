@@ -13,4 +13,6 @@ struct SleepDataPoint: Identifiable {
     var day: String
     // The number of hours slept on each day of the week.
     var hours: Int
+    // The type of sleep (e.g. "Night", "Nap", etc).
+    var type: String = "Night"
 }
