@@ -7,7 +7,9 @@
 
 import Foundation
 
-struct SleepDataPoint {
+// Conform to the Identifiable protocol so that we can loop through and differentiate the data points.
+struct SleepDataPoint: Identifiable {
+    var id = UUID().uuidString
     var day: String
     // The number of hours slept on each day of the week.
     var hours: Int
